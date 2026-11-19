@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "last-crossing",
+  "title": "The Last Crossing",
+  "start": "pier",
+  "scenes": {
+    "pier": {
+      "title": "The last crossing",
+      "prose": "The ferry has already pulled in its rope. Through the fog, someone on the opposite bank rings a bell twice. The ferryman takes his hand off the throttle.",
+      "choices": [
+        {
+          "id": "listen",
+          "label": "Wait for a third bell",
+          "to": "echo",
+          "grants": "signal"
+        },
+        {
+          "id": "board",
+          "label": "Step aboard",
+          "to": "deck"
+        }
+      ]
+    },
+    "echo": {
+      "title": "An answer in brass",
+      "prose": "One low note follows the two high ones. From inside the wheelhouse, a child taps the same three notes against the glass.",
+      "choices": [
+        {
+          "id": "follow",
+          "label": "Join the child on deck",
+          "to": "deck"
+        }
+      ]
+    },
+    "deck": {
+      "title": "A hand on the throttle",
+      "prose": "The channel lights go out. Under your hand the rail begins to shake. The ferryman looks toward the dark landing and waits.",
+      "choices": [
+        {
+          "id": "cast",
+          "label": "Cast off",
+          "to": "dawn"
+        },
+        {
+          "id": "ring",
+          "label": "Answer the bell",
+          "to": "raft",
+          "requires": "signal"
+        }
+      ]
+    },
+    "dawn": {
+      "title": "Open water",
+      "prose": "The ferry clears the pier just before it slips into the channel. At first light, the child draws the old landing from memory.",
+      "choices": []
+    },
+    "raft": {
+      "title": "Room for one more",
+      "prose": "Two high notes and one low. A raft noses out from under the landing. The ferryman lowers a ladder, and the child finally lets go of the glass.",
+      "choices": []
+    }
+  }
+}
