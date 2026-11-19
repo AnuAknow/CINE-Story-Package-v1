@@ -6,7 +6,7 @@
   "scenes": {
     "pier": {
       "title": "The last crossing",
-      "prose": "The ferry has already pulled in its rope. Through the fog, someone on the opposite bank rings a bell twice. The ferryman takes his hand off the throttle.",
+      "prose": "Two bells from the empty landing. Captain Inez Vale takes her boot off the throttle. Her ferry still wears the paint of the Royal Mail, which saves her pirate crew a fortune in ammunition. Under the wheelhouse bench, a girl in a stolen officer’s coat is winding a pocket watch backward. “Please,” she says. “Let it ring again.”",
       "choices": [
         {
           "id": "listen",
@@ -23,7 +23,7 @@
     },
     "echo": {
       "title": "An answer in brass",
-      "prose": "One low note follows the two high ones. From inside the wheelhouse, a child taps the same three notes against the glass.",
+      "prose": "The third bell is low enough to tremble in your teeth. The girl taps the whole phrase on the glass. “That’s how Mama signs off.” Across the channel, a strip of silver paint glints on a raft. It bears the name of Vale’s first prize, the survey ship Petrel, lost with all hands eleven years ago.",
       "choices": [
         {
           "id": "follow",
@@ -34,7 +34,7 @@
     },
     "deck": {
       "title": "A hand on the throttle",
-      "prose": "The channel lights go out. Under your hand the rail begins to shake. The ferryman looks toward the dark landing and waits.",
+      "prose": "By noon the fog has burned off. The bell rings again in open sea. Something broad as an island rolls beneath the keel. The depth sounder prints a receipt on yellow paper: PETREL · PASSAGE OWING · ELEVEN YEARS. Vale reads it twice. “I stole her chronometer,” she says. “I never stole a whole eleven years.” The girl lays her ticking watch beside the brass socket at the helm.",
       "choices": [
         {
           "id": "cast",
@@ -46,17 +46,85 @@
           "label": "Answer the bell",
           "to": "raft",
           "requires": "signal"
+        },
+        {
+          "id": "sound",
+          "label": "Lower the sounding bucket",
+          "to": "bucket"
         }
       ]
     },
     "dawn": {
       "title": "Open water",
-      "prose": "The ferry clears the pier just before it slips into the channel. At first light, the child draws the old landing from memory.",
+      "prose": "Vale casts off the towline trailing below the hull. Eleven years of barnacles bloom along its length before it sinks. You make port at dawn with every soul aboard accounted for. The girl leaves her watch with you. Every noon thereafter it chimes once for a ship still waiting to come home.",
       "choices": []
     },
     "raft": {
       "title": "Room for one more",
-      "prose": "Two high notes and one low. A raft noses out from under the landing. The ferryman lowers a ladder, and the child finally lets go of the glass.",
+      "prose": "You ring two high notes and one low. The silver raft breaks surface with a woman at its oars, still wearing yesterday’s survey uniform. The girl scrambles down before anyone can rig a ladder. “You cut your hair,” her mother says, and then she sees how tall her daughter is. Vale quietly turns the ferry’s clock to face the wall.",
+      "choices": []
+    },
+    "bucket": {
+      "title": "Soundings",
+      "prose": "The bucket comes up dry. Inside sits a warm breakfast roll and a scrap of chart marked in butter. Someone below has drawn your hull from underneath. When you lean over, the sea opens like a hatch. Down there, standing sideways on the Petrel’s deck, a cook is pointing urgently at his oven clock. It reads noon minus one minute.",
+      "choices": [
+        {
+          "id": "boardPrize",
+          "label": "Take Vale across to the prize",
+          "to": "ledger"
+        },
+        {
+          "id": "sendWatch",
+          "label": "Send down the girl’s watch",
+          "to": "galley"
+        }
+      ]
+    },
+    "ledger": {
+      "title": "The prize ledger",
+      "prose": "You step across onto yesterday’s deck. Under the binnacle glass lies Vale’s prize receipt. You tilt it toward the light. CHRONOMETER is the only line in her handwriting. Underneath, a Royal surveyor has added CREW, 38 and signed for the lot. The Royal Observatory has been drawing an extra minute from these people every noon. Vale holds out her hand. “You found the receipt. Your call.”",
+      "choices": [
+        {
+          "id": "steal",
+          "label": "Steal the receipt",
+          "to": "receipt"
+        },
+        {
+          "id": "transmit",
+          "label": "Read the account over the mail radio",
+          "to": "broadcast"
+        }
+      ]
+    },
+    "galley": {
+      "title": "One minute to serve",
+      "prose": "The cook catches the watch in his apron. Its hands run backward through the minute his oven clock keeps losing. For the first time in eleven years his bread comes out baked. Then the Petrel’s bow starts to rise directly under your ferry. The cook cups his hands. “Which one of these boats are we keeping?”",
+      "choices": [
+        {
+          "id": "transfer",
+          "label": "Order all hands onto the Petrel",
+          "to": "prize"
+        },
+        {
+          "id": "tow",
+          "label": "Throw the cook your towline",
+          "to": "receipt"
+        }
+      ]
+    },
+    "receipt": {
+      "title": "A pirate’s arithmetic",
+      "prose": "The ships draw level long enough to pass all thirty-eight sailors across. The Petrel goes down empty. At supper Vale divides the last loaf into thirty-eight thin slices and one thick heel. The cook takes the heel. “Salvage fee,” he says. For the first time all day the girl laughs.",
+      "choices": []
+    },
+    "broadcast": {
+      "title": "An open frequency",
+      "prose": "Every mail station on the coast hears thirty-eight names and the price the Crown paid for each. Fishing boats answer first, then tugs. With half the coast listening, the Observatory cuts its time signal. The Petrel settles into the present with a bump. By sunset Vale is wanted for piracy again. She frames the warrant. This time they spelled her name right.",
+      "choices": []
+    },
+    "prize": {
+      "title": "A change of flag",
+      "prose": "The last deckhand jumps as the ferry folds into a silver line. The Petrel surfaces under a black flag stitched from mail sacks. Vale offers the wheel to the survey captain. Her daughter claims the brass socket beside it for her watch. At twelve-oh-one the whole crew cheers. You have your first pirate prize, and tomorrow to sail her.",
       "choices": []
     }
   }
